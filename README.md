@@ -16,35 +16,24 @@ Next, install `eslint-plugin-no-string`:
 $ npm install eslint-plugin-no-string --save-dev
 ```
 
-
 ## Usage
 
 Add `no-string` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
-    "plugins": [
-        "no-string"
-    ]
+  "plugins": ["no-string"]
 }
 ```
-
 
 Then configure the rules you want to use under the rules section.
 
 ```json
 {
-    "rules": {
-        "no-string/rule-name": 2
-    }
+  "rules": {
+    "no-string/rule-name": ["error", "always", [".jsx", ".tsx"]]
+  }
 }
 ```
 
 ## Supported Rules
-
-* Fill in provided rules here
-
-
-
-
-

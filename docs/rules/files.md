@@ -1,36 +1,28 @@
 # no string in files (files)
 
-Please describe the origin of the rule here.
-
+In some projects, strings will be managed in a unified way to make projects is more friendly with i18n. So that, you may not want strings to appear in some files in your project.
 
 ## Rule Details
 
-This rule aims to...
+This rule enforces that string cannot exist in files.
 
 Examples of **incorrect** code for this rule:
 
 ```js
-
-// fill me in
-
+var a = "hello world";
 ```
 
 Examples of **correct** code for this rule:
 
 ```js
-
-// fill me in
-
+import Strings from "../Strings";
+var a = Strings.hello;
 ```
 
 ### Options
 
-If there are any options, describe them here. Otherwise, delete this section.
+For example, test the react files, and report error
 
-## When Not To Use It
-
-Give a short description of when it would be appropriate to turn off this rule.
-
-## Further Reading
-
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+```
+['error', "always", [".jsx", ".tsx"]],
+```
