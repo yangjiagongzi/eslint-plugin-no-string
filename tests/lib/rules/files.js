@@ -38,6 +38,11 @@ ruleTester.run("files", rule, {
       options: ["always", [".jsx", ".tsx"]],
       filename: "a.js",
     },
+    {
+      code: "var axios = require('axios')",
+      options: ["always", [".jsx", ".tsx"]],
+      filename: "a.jsx",
+    },
   ],
 
   invalid: [
