@@ -2,6 +2,8 @@
 
 no string in files
 
+**Under development, do not use in production environment**
+
 ## Installation
 
 You'll first need to install [ESLint](http://eslint.org):
