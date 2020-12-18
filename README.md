@@ -27,11 +27,12 @@ Add `no-string` to the plugins section of your `.eslintrc` configuration file. Y
 ```
 
 Then configure the rules you want to use under the rules section.
+Now only ".js", ".ts", ".jsx", ".tsx" are supported
 
 ```json
 {
   "rules": {
-    "no-string/rule-name": ["error", "always", [".jsx", ".tsx"]]
+    "no-string/files": ["error", "always", [".jsx", ".tsx"]]
   }
 }
 ```
