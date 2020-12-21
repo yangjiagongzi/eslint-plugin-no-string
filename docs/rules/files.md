@@ -24,5 +24,5 @@ var a = Strings.hello;
 For example, test the react files, and report error
 
 ```
-['error', "always", [".jsx", ".tsx"]],
+['error', "always", ["**/*.jsx", "**/*.tsx"]],
 ```

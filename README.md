@@ -1,6 +1,6 @@
 # eslint-plugin-no-string
 
-no string in files
+In some projects, strings will be managed in a unified way to make projects is more friendly with i18n. So that, you may not want strings to appear in some files in your project.
 
 ## Installation
 
@@ -27,12 +27,15 @@ Add `no-string` to the plugins section of your `.eslintrc` configuration file. Y
 ```
 
 Then configure the rules you want to use under the rules section.
-Now only ".js", ".ts", ".jsx", ".tsx" are supported
 
 ```json
 {
   "rules": {
-    "no-string/files": ["error", "always", [".jsx", ".tsx"]]
+    "no-string/files": [
+      "error",
+      "always",
+      ["src/**", "src/index.ts", "**/*.jsx", "**/*.tsx"]
+    ]
   }
 }
 ```

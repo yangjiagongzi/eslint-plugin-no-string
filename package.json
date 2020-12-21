@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-string",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "no string in files",
   "keywords": [
     "eslint",
@@ -13,6 +13,7 @@
     "test": "mocha tests --recursive"
   },
   "dependencies": {
+    "anymatch": "^3.1.1",
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
