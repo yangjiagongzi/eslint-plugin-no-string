@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-string",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "no string in files",
   "keywords": [
     "eslint",
