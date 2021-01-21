@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-string",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "no string in files",
   "keywords": [
     "eslint",
@@ -22,6 +22,10 @@
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangjiagongzi/eslint-plugin-no-string"
   },
   "license": "UNLICENSED"
 }
