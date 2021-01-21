@@ -20,27 +20,27 @@ ruleTester.run("files", rule, {
   valid: [
     {
       code: "var a = ''",
-      options: ["always", [".jsx", ".tsx"]],
+      options: ["always", ["**/*.jsx", "**/*.tsx"]],
       filename: "a.jsx",
     },
     {
       code: "var a = b",
-      options: ["always", [".jsx", ".tsx"]],
+      options: ["always", ["**/*.jsx", "**/*.tsx"]],
       filename: "a.jsx",
     },
     {
       code: "var a = '123'",
-      options: ["never", [".jsx", ".tsx"]],
+      options: ["never", ["**/*.jsx", "**/*.tsx"]],
       filename: "a.jsx",
     },
     {
       code: "var a = '123'",
-      options: ["always", [".jsx", ".tsx"]],
+      options: ["always", ["**/*.jsx", "**/*.tsx"]],
       filename: "a.js",
     },
     {
       code: "var axios = require('axios')",
-      options: ["always", [".jsx", ".tsx"]],
+      options: ["always", ["**/*.jsx", "**/*.tsx"]],
       filename: "a.jsx",
     },
   ],
@@ -48,7 +48,7 @@ ruleTester.run("files", rule, {
   invalid: [
     {
       code: "var a = '123'",
-      options: ["always", [".jsx", ".tsx"]],
+      options: ["always", ["**/*.jsx", "**/*.tsx"]],
       filename: "a.tsx",
       errors: [
         {
